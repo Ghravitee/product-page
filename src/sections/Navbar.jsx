@@ -39,16 +39,16 @@ const Navbar = () => {
               className="cursor-pointer"
             />
           </div>
-          <ul className="flex lg:gap-8 md:gap-4 items-center">
+          <div className="flex lg:gap-8 md:gap-4 items-center">
             {NavLink.map((item) => (
-              <div key={item.title} className="relative group">
+              <ul key={item.title} className="relative group">
                 <li className="text-Dark-Grayish-Blue">
                   <a href="#">{item.title}</a>
                 </li>
                 <div className="h-[3px] w-full bg-Orange xl:top-[70px] md:top-[40px] absolute z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </div>
+              </ul>
             ))}
-          </ul>
+          </div>
         </div>
 
         <div className="flex items-center gap-10">
