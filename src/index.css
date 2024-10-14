@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Orange: hsl(26, 100%, 55%);
+  --Pale-Orange: hsl(25, 100%, 94%);
+  --Very-Dark-Blue: hsl(220, 13%, 13%);
+  --Dark-Grayish-Blue: hsl(219, 9%, 45%);
+  --Grayish-Blue: hsl(220, 14%, 75%);
+  --Light-Grayish-Blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+}
+
+.kumbh-700 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "YOPQ" 300;
+}
+
+@layer utilities {
+  .container {
+    @apply xl:max-w-[1100px] mx-auto px-4 sm:px-8 lg:px-0;
+  }
+
+  .box {
+    @apply shadow-[rgba(0,0,0,0.1)_6px_10px_20px_2px];
+  }
+
+  .close:hover {
+    @apply fill-green-600;
+  }
+}
