@@ -96,13 +96,12 @@ const Navbar = () => {
             />
           </div>
         </div>
-        <div className="flex items-center gap-4">
-          <div className="relative">
+        <div className="flex items-center gap-4 ">
+          <div className="relative p-4" onClick={toggleCart}>
             <svg
               className="cursor-pointer fill-Dark-Grayish-Blue hover:fill-black"
-              onClick={toggleCart}
-              width="22"
-              height="20"
+              width="26"
+              height="22"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -111,7 +110,7 @@ const Navbar = () => {
               />
             </svg>
 
-            <div className="absolute -top-[6px] -right-1 w-4 h-3 rounded-xl bg-Orange flex justify-center items-center">
+            <div className="absolute top-[10px] right-2 w-4 h-3 rounded-xl bg-Orange flex justify-center items-center">
               <p className="text-white text-[10px] font-bold">{count}</p>
             </div>
           </div>
@@ -132,7 +131,7 @@ const Navbar = () => {
                 src={iconClose}
                 onClick={openMenu}
                 alt=""
-                className="w-3 h-3 "
+                className="w-5 h-5 "
               />
               <ul className="flex flex-col gap-3 mt-10">
                 {NavLink.map((items, index) => (

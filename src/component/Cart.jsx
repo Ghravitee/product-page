@@ -8,7 +8,7 @@ const Cart = () => {
 
   const calculatedPrice = price * count;
   return (
-    <div className="py-8 absolute w-[92%] md:w-[23rem] mx-auto top-24 lg:-right-28 lg:top-[105px] z-[50] box bg-white rounded-md">
+    <div className="py-8 absolute w-[92%] md:w-[23rem] mx-auto top-24 lg:-right-28 lg:top-[105px] z-40 box bg-white rounded-md">
       <div className="px-6 ">
         <h3 className="font-bold">Cart</h3>
       </div>
