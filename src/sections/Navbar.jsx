@@ -41,12 +41,14 @@ const Navbar = () => {
           </div>
           <div className="flex lg:gap-8 md:gap-4 items-center">
             {NavLink.map((item) => (
-              <ul key={item.title} className="relative group">
-                <li className="text-Dark-Grayish-Blue">
-                  <a href="#">{item.title}</a>
-                </li>
+              <div key={item.title} className="relative group">
+                <ul>
+                  <li className="text-Dark-Grayish-Blue">
+                    <a href="#">{item.title}</a>
+                  </li>
+                </ul>
                 <div className="h-[3px] w-full bg-Orange xl:top-[70px] md:top-[40px] absolute z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </ul>
+              </div>
             ))}
           </div>
         </div>
